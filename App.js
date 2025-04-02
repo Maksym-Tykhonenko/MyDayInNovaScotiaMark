@@ -72,7 +72,7 @@ function MyTabs() {
 }
 
 export default function App() {
-  const [route, setRoute] = useState(true);
+  const [route, setRoute] = useState(false);
   //console.log('route===>', route);
   const [responseToPushPermition, setResponseToPushPermition] = useState(false);
   ////('Дозвіл на пуши прийнято? ===>', responseToPushPermition);
@@ -601,7 +601,7 @@ export default function App() {
     const checkUrl = `${INITIAL_URL}${URL_IDENTIFAIRE}`;
     //console.log(checkUrl);
 
-    const targetData = new Date('2025-04-01T16:00:00'); //дата з якої поч працювати webView
+    const targetData = new Date('2025-04-05T16:00:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
 
     if (!route) {
